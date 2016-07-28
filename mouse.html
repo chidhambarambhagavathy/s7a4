@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Movement</title>
+</head>
+<body id="myBody">
+	<script>
+	function myFunction(e) {
+	    var para = document.createElement("P");
+	    var t = document.createTextNode("X : "+e.clientX + "; Y: "+e.clientY+"; Time: "+ Date());
+	    para.appendChild(t);
+	    document.getElementById("myBody").insertBefore(para, document.body.firstChild);
+	}
+	document.onmousemove = myFunction;
+	</script>
+</body>
+</html>
